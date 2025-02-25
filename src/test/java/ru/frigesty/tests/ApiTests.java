@@ -3,6 +3,7 @@ package ru.frigesty.tests;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.frigesty.models.*;
 import java.util.List;
@@ -15,6 +16,7 @@ import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static ru.frigesty.specs.ApiSpecs.*;
 
+@Tag("api")
 public class ApiTests {
 
     @BeforeEach
